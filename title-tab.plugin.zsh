@@ -5,5 +5,5 @@ function git_branch {
 }
 
 function precmd {
-  echo -ne "\e]1;${PWD//*\//} $(git_branch)\a"
+  echo -ne "\e]0;${PWD//*\//} $(git_branch)\a"
 }
